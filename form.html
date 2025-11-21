@@ -2,64 +2,55 @@
 <html>
   <head>
     <title>Form</title>
+    <style>
+      body {     
+      background-color: rgb(193, 221, 228);
+      font-family: Arial;
+    }
+    #id1{
+      color:blue;
+    }
+    .color{
+      background-color: green;
+      color: white;
+    }
+
+    </style>
+    <link rel="stylesheet" href="styles.css">
+
   </head>
   <body>
-    <h2>Form Example</h2>
-    <form action="sample.html">
-      <table border="=1">
-        <tr>
-          <td><label>Username </label></td>
-          <td><input type="text" /></td>
-        </tr>
-        <tr>
-          <td><label>password :</label></td>
-          <td><input type="text" /></td>
-        </tr>
-        <tr>
-          <td><input type="reset" /></td>
-          <td><input type="submit" /></td>
-        </tr>
-      </table></br>
-      <label>Username : </label>
-      <input type="text" />
-      <br />
-      <label>password :</label>
-      <input type="text" />
-      <br />
-      <input type="reset" />
-      <input type="submit" />
-    </form>
-
-    <form action="index.html">
-        <table border="=1">
-            <tr> <th colspan="2">Student Registration Form</th><tr>
+    <div style="display: flex; justify-content: center; ">
+    <form action="index.html" >
+        <table style="background-color: lightgoldenrodyellow; margin-top: 150px;">
+            <tr> <th id="id1" colspan="2">Student Registration Form</th><tr>
         <tr>
             <td><label>Roll no. : </label></td>
-            <td> <input type="text" /></td>
+            <td> <input type="text" required id="id2"/></td>
         </tr>
         <tr>
             <td><label>Student name :</label></td>
-            <td><input type="text" /><label>-</label><input type="text" /></td>
+            <td><input type="text" placeholder="First Name" id="id2"/><label>-</label><input type="text" placeholder="Last Name" id="id2"/></td>
         </tr>
         <tr>
         <td><label>Father's name : </label></td>
-       <td> <input type="text" /></td>
+       <td> <input type="text" id="id2"/></td>
         </tr>
         <tr>
         <td><label>Date of birth : </label></td>
-        <td><input type="date" /></td>
+        <td><input type="date" id="id2"/></td>
         </tr>
         <tr>
         <td><label>Mobile no. : </label></td>
-            <td> <input type="number" /><label>-</label><input type="number" /></td>
+            <td> <input type="tel" value="+91" style="width: 30px;" id="id2"/><label>-</label><input type="number" id="id2"/></td>
         </tr>
         <tr>
             <td><label>Email id : </label></td>
-                <td><input type="email" /></td>
+                <td><input type="email" id="id2"/></td>
         </tr>
         <tr>
             <td> <label>Password : </label></td>
-                <td><input type="password" /></td>
+                <td><input type="password" id="id2"/></td>
         </tr>
         <tr>
             <td> <label>Gender : </label></td>
@@ -74,16 +65,17 @@
         <label> CSE</label>
         <input type="checkbox" id="department1" name="department1" value="IT"/>
         <label> IT</label>
-        <input type="checkbox" id="department1" name="department1" value="ECE"/>
+        <input type="checkbox" id="department2" name="department2" value="ECE"/>
         <label> ECE</label>
-        <input type="checkbox" id="department1" name="department1" value="Civil"/>
+        <input type="checkbox" id="department3" name="department3" value="Civil"/>
         <label> Civil</label>
-        <input type="checkbox" id="department1" name="department1" value="Mech"/>
+        <input type="checkbox" id="department4" name="department4" value="Mech"/>
         <label> Mech</label></td>
         </tr>
         <tr>
             <td> <label>Course : </label></td>
                 <td><select name="course" id="course">
+                  <option value="">--------- select current courses's------</option>
             <option value="java">JAVA</option>
             <option value="html">HTML</option>
             <option value="css">CSS</option>
@@ -96,15 +88,16 @@
         </tr>
         <tr>
             <td><label>City : </label></td>
-                <td><input type="text" /></td>
+                <td><input type="text" id="id2"/></td>
         </tr>
         <tr>
             <td><label>Address : </label></td>
-            <td><textarea></textarea></td>
+            <td><textarea id="id2"></textarea></td>
         </tr>
         <tr>
-        <th colspan="2"><input type="submit" value="Register" /><th></tr>
+        <th colspan="2"><input type="submit" value="Register" class="color"/><th></tr>
     </table>
       </form>
+      </div>
   </body>
 </html>

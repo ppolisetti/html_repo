@@ -1,3 +1,9 @@
-h1 {
-  text-decoration: underline;
+
+form {
+  width: 600px;
+  margin-left: 10%;
+}
+
+#id2{
+  background-color: #F0FFF0;
 }
